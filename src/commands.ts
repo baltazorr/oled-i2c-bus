@@ -1,0 +1,30 @@
+export module Commands {
+    export const DISPLAY_OFF = 0xAE;
+    export const DISPLAY_ON = 0xAF;
+    export const SET_DISPLAY_CLOCK_DIV = 0xD5;
+    export const SET_MULTIPLEX = 0xA8;
+    export const SET_DISPLAY_OFFSET = 0xD3;
+    export const SET_START_LINE = 0x00;
+    export const CHARGE_PUMP = 0x8D;
+    export const EXTERNAL_VCC = false;
+    export const MEMORY_MODE = 0x20;
+    export const SEG_REMAP = 0xA1; // using 0xA0 will flip screen
+    export const COM_SCAN_DEC = 0xC8;
+    export const COM_SCAN_INC = 0xC0;
+    export const SET_COM_PINS = 0xDA;
+    export const SET_CONTRAST = 0x81;
+    export const SET_PRECHARGE = 0xd9;
+    export const SET_VCOM_DETECT = 0xDB;
+    export const DISPLAY_ALL_ON_RESUME = 0xA4;
+    export const NORMAL_DISPLAY = 0xA6;
+    export const COLUMN_ADDR = 0x21;
+    export const PAGE_ADDR = 0x22;
+    export const INVERT_DISPLAY = 0xA7;
+    export const ACTIVATE_SCROLL = 0x2F;
+    export const DEACTIVATE_SCROLL = 0x2E;
+    export const SET_VERTICAL_SCROLL_AREA = 0xA3;
+    export const RIGHT_HORIZONTAL_SCROLL = 0x26;
+    export const LEFT_HORIZONTAL_SCROLL = 0x27;
+    export const VERTICAL_AND_RIGHT_HORIZONTAL_SCROLL = 0x29;
+    export const VERTICAL_AND_LEFT_HORIZONTAL_SCROLL = 0x2A;
+}
