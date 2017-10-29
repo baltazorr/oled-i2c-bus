@@ -1,33 +1,41 @@
 {
-  "name": "oled-i2c-bus",
-  "version": "1.0.9",
-  "description": "NodeJS module for controlling oled devices on the Raspbery Pi (including the SSD1306 OLED screens)",
-  "main": "oled.js",
-  "devDependencies": {
-    "oled-font-5x7": "~1.0.0",
-    "png-to-lcd": "~1.0.2",
-    "pngparse": "~2.0.1",
-    "temporal": "^0.3.8"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/baltazorr/oled-i2c-bus.git"
-  },
-  "keywords": [
-    "Raspbery Pi",
-    "Pi",
-    "NodeJS",
-    "oled",
-    "SSD1306",
-    "128x64"
-  ],
-  "author": ["Judd Flamm", "Suz Hinton", "Bogdan Symchych"],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/kd7yva/oled-i2c-bus/issues"
-  },
-  "homepage": "https://github.com/baltazorr/oled-i2c-bus"
+    "name": "oled-i2c-bus",
+    "version": "1.0.9",
+    "description": "NodeJS module for controlling oled devices on the Raspbery Pi (including the SSD1306 OLED screens)",
+    "main": "dist/index.js",
+    "typings": "./dist/index.d.ts",
+    "devDependencies": {
+        "oled-font-5x7": "~1.0.0",
+        "png-to-lcd": "~1.0.2",
+        "pngparse": "~2.0.1",
+        "temporal": "^0.3.8",
+        "@types/node": "8.0.47"
+    },
+    "scripts": {
+        "prepublish": "tsc --outDir dist",
+        "doc": "typedoc --options typedoc.json",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/baltazorr/oled-i2c-bus.git"
+    },
+    "keywords": [
+        "Raspbery Pi",
+        "Pi",
+        "NodeJS",
+        "oled",
+        "SSD1306",
+        "128x64"
+    ],
+    "author": [
+        "Judd Flamm",
+        "Suz Hinton",
+        "Bogdan Symchych"
+    ],
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/kd7yva/oled-i2c-bus/issues"
+    },
+    "homepage": "https://github.com/baltazorr/oled-i2c-bus"
 }
